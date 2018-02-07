@@ -9,8 +9,10 @@
 // @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 @import "~bootstrap/scss/bootstrap";
 
-// Guest pages
-@import "guest";
+// Bootstrap Override
+@import "bootstrapOverride";
+
+@import "homepage";
 
 .navbar-side {
   height: 100%;
@@ -20,9 +22,8 @@
   left: -50em;
   padding: 0;
   list-style: none;
-  border-left: 2px solid #ccc;
   background-color: #f7f7f9;
-  overflow-y: scroll;
+  overflow: auto;
   z-index: 1000;
 
   -webkit-transform: translateX(0);
@@ -39,7 +40,6 @@
 .navbar-side-item {
   padding: 1.5rem 0;
   margin: 0;
-  border-bottom: 2px solid #ccc;
   height: 5rem;
 }
 
@@ -51,8 +51,8 @@
   -webkit-transform: translateX(50em);
   -ms-transform: translateX(50em);
   transform: translateX(50em);
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
 }
 
 .overlay {

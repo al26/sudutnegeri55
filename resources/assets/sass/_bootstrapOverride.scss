@@ -1,0 +1,8 @@
+.navbar {
+	@include media-breakpoint-only(xs) { padding: .5rem; }
+}
+
+.navbar-toggler {
+	border: none;
+	padding: 0;
+}

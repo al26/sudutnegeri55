@@ -12,4 +12,6 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/vendor/js')
-   .sass('resources/assets/sass/app.scss', 'public/vendor/css');
+   .sass('resources/assets/sass/app.scss', 'public/vendor/css')
+   .copy('resources/assets/images/*', 'public/vendor/images', false)
+   .options({processCssUrls: false});
