@@ -36,29 +36,31 @@ $( document ).ready(function() {
   });
 
   // Owl carousel plugin
-  var owl = $('.owl-carousel');
+	var owl = $('.owl-carousel');
 	owl.owlCarousel({
 	    dots:true,
 	    responsive:{
 	        0:{
-	            items:1
+	            items:1,
+	            dots:true
 	        },
-	        600:{
-	            items:2
+	        768:{
+	            items:2,
+	            dots:true
 	        },            
-	        960:{
-	            items:3
+	        1024:{
+	            items:4,
+	            dots:true
 	        },
-	        1200:{
-	            items:4
+	        1440:{
+	            items:4,
+	            dots:true
+	        },
+	        2560:{
+	            items:6,
+	            dots:true
 	        }
 	    }
-	});
-
-  	$(".image-flip").hover(function(){
-	    $(this).addClass('hover');
-	    }, function(){
-	    $(this).removeClass('hover');
 	});
 
 

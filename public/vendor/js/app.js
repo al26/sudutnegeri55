@@ -13807,48 +13807,50 @@ window.Vue = __webpack_require__(36);
 Vue.component('example-component', __webpack_require__(39));
 
 var app = new Vue({
-  el: '#app'
+	el: '#app'
 });
 
 $(document).ready(function () {
 
-  // Open navbarSide when button is clicked
-  $('#navbarSideButton').on('click', function () {
-    $('#navbarSide').addClass('reveal');
-    $('.overlay').show();
-  });
+	// Open navbarSide when button is clicked
+	$('#navbarSideButton').on('click', function () {
+		$('#navbarSide').addClass('reveal');
+		$('.overlay').show();
+	});
 
-  // Close navbarSide when the outside of menu is clicked
-  $('.overlay').on('click', function () {
-    $('#navbarSide').removeClass('reveal');
-    $('.overlay').hide();
-  });
+	// Close navbarSide when the outside of menu is clicked
+	$('.overlay').on('click', function () {
+		$('#navbarSide').removeClass('reveal');
+		$('.overlay').hide();
+	});
 
-  // Owl carousel plugin
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    dots: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      960: {
-        items: 3
-      },
-      1200: {
-        items: 4
-      }
-    }
-  });
-
-  $(".image-flip").hover(function () {
-    $(this).addClass('hover');
-  }, function () {
-    $(this).removeClass('hover');
-  });
+	// Owl carousel plugin
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+		dots: true,
+		responsive: {
+			0: {
+				items: 1,
+				dots: true
+			},
+			768: {
+				items: 2,
+				dots: true
+			},
+			1024: {
+				items: 4,
+				dots: true
+			},
+			1440: {
+				items: 4,
+				dots: true
+			},
+			2560: {
+				items: 6,
+				dots: true
+			}
+		}
+	});
 });
 
 /***/ }),
