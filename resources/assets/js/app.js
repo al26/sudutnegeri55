@@ -35,4 +35,32 @@ $( document ).ready(function() {
     $('.overlay').hide();
   });
 
+  // Owl carousel plugin
+  var owl = $('.owl-carousel');
+	owl.owlCarousel({
+	    dots:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:2
+	        },            
+	        960:{
+	            items:3
+	        },
+	        1200:{
+	            items:4
+	        }
+	    }
+	});
+
+  	$(".image-flip").hover(function(){
+	    $(this).addClass('hover');
+	    }, function(){
+	    $(this).removeClass('hover');
+	});
+
+
+
 });

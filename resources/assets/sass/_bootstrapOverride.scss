@@ -6,3 +6,16 @@
 	border: none;
 	padding: 0;
 }
+
+.card, [class*="card-"] {
+	border-radius: 0 !important;
+}
+
+.card-header {
+	background: inherit;
+}
+
+.card-footer {
+	background: inherit;
+	border: none;
+}
