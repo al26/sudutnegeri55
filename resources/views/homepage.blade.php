@@ -22,13 +22,13 @@
     </head>
     <body>
         <div id="app">
-        	<nav class="navbar navbar-expand-sm navbar-dark bg-primary ">
+        	<nav class="navbar navbar-expand-sm bg-light sticky-top">
 	        	<!-- Toggler/collapsibe Button -->
-				<button class="navbar-toggler" type="button" id="navbarSideButton">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler text-black" type="button" id="navbarSideButton">
+					<i class="fas fa-th-list"></i>
 				</button>
-				<a class="navbar-brand" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch">
+				<a class="navbar-brand text-black" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
+				<button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSearch">
 					<span class="fas fa-search"></span>
 				</button>
 
@@ -87,7 +87,7 @@
 
 
 			<section id="banner" class="text-center">
-				<div id="img-banner" class="carousel slide" data-ride="carousel">
+				<div id="img-banner" class="carousel slide d-flex flex-column" data-ride="carousel">
 					<div class="carousel-inner">
 					    <div class="carousel-item active">
 					      	<img src="{{ asset('vendor/images/homepage_carousel/main_slider/bg_1.jpg') }}" alt="First Image" class="d-block img-fluid">
@@ -99,10 +99,12 @@
 					      	<img src="{{ asset('vendor/images/homepage_carousel/main_slider/bg_3.jpg') }}" alt="Third Image" class="d-block img-fluid">
 					    </div>
 					</div>
-				</div>
-				<div id="caption-banner">
-					<h2 id="cb-title">Peduli Pendidikan Indonesia</h2>
-					<h3 id="cb-desc"><small>SudutNegeri mempertemukan antara Volunteer dan Donatur dengan bagian Indonesia yang membutuhkan bantuan pendidikan</small></h3>
+					<div id="caption-banner" class="carousel-caption text-justify text-sm-center">
+					    <h5 id="cb-title" class="text-capitalize">Ikut Peduli Majukan Pendidikan Indonesia</h5>
+						<h6 id="cb-desc" class="d-none"><small>SudutNegeri mempertemukan antara Volunteer dan Donatur dengan bagian Indonesia yang membutuhkan bantuan pendidikan</small></h6>
+						<a href="" class="btn btn-md btn-outline-white mt-3">Ikut Peduli</a>
+
+				    </div>
 				</div>
 			</section>
 
@@ -114,7 +116,7 @@
 					</div>
 					<a href="" class="p-1 text-white align-self-center"><h1 class="m-0"><i class="fas fa-angle-right"></i></h1></a>
 				</div>
-				<div class="owl-carousel owl-theme">
+				<div class="container owl-carousel owl-theme">
 				    <div class="item">
 				    	<div class="card-flip">
 							<div class="front-side w-100 animated flipInY">
@@ -357,7 +359,7 @@
 					</div>
 					<a href="" class="p-1 text-white align-self-center"><h1 class="m-0"><i class="fas fa-angle-right"></i></h1></a>
 				</div>
-				<div class="owl-carousel owl-theme">
+				<div class="container owl-carousel owl-theme">
 				    <div class="item">
 				    	<div class="card-flip">
 							<div class="front-side w-100 animated flipInY">
@@ -536,7 +538,7 @@
 				<div class="d-flex flex-row justify-content-center py-3">
 					<div class="container">
 					  <div class="card bg-faded">
-					    <div class="card-body media">
+					    <div class="card-body media p-2">
 						    <div class="media-body">
 						      <h5 class="mt-0 mb-1 text-black">Campaign Peduli</h5>
 						      <h5 class="text-danger"><small>1.244</small></h5>
@@ -545,7 +547,7 @@
 					    </div>
 					  </div>
 					  <div class="card bg-faded my-1">
-					    <div class="card-body media">
+					    <div class="card-body media p-2">
 						    <div class="media-body">
 						      <h5 class="mt-0 mb-1 text-black">Project Terlaksana</h5>
 						      <h5 class="text-danger"><small>1.244</small></h5>
@@ -554,7 +556,7 @@
 					    </div>
 					  </div>
 					  <div class="card bg-faded my-1">
-					    <div class="card-body media">
+					    <div class="card-body media p-2">
 						    <div class="media-body">
 						      <h5 class="mt-0 mb-1 text-black">Si Negeri Peduli</h5>
 						      <h5 class="text-danger"><small>1.244</small></h5>
@@ -563,7 +565,7 @@
 					    </div>
 					  </div>
 					  <div class="card bg-faded">
-					    <div class="card-body media">
+					    <div class="card-body media p-2">
 						    <div class="media-body">
 						      <h5 class="mt-0 mb-1 text-black">Investasi Berdampak</h5>
 						      <h5 class="text-danger"><small>1.244</small></h5>
@@ -597,31 +599,7 @@
 	    <script src="{{ asset('vendor/js/app.js') }}"></script>
 	    <script src="{{ asset('vendor/js/owl.carousel.min.js') }}"></script>
 	    <script type="text/javascript">
-	    	function rotateCard(){
-		        $('.card-flip').toggleClass('hover');
-		    }
-		    function manualFlip(action) {
-		    	var card = $('.card-flip');
-
-		    	if (action == 'flip') {
-		    		if (card.hasClass('not-flipped')) card.removeClass('not-flipped');
-		    		card.addClass('flipped');
-		    	} else {
-		    		if (card.hasClass('flipped')) card.removeClass('flipped');
-		    		card.addClass('not-flipped');
-		    	}
-		    	
-		    }
-
-		    function flipToBack(btn) {
-		    	$(btn).parents('.front-side').hide();
-		    	$(btn).parents('.card-flip').find('.back-side').show();
-		    }
-
-		    function flipToFront(btn) {
-		    	$(btn).parents('.back-side').hide();
-		    	$(btn).parents('.card-flip').find('.front-side').show();
-		    }
+	    	
 
 	    </script>
     </body>
