@@ -6,6 +6,7 @@
  */
 
 require('./bootstrap');
+require('./offCanvas');
 require('./main');
 
 window.Vue = require('vue');

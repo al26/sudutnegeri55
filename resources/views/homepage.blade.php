@@ -22,17 +22,64 @@
     </head>
     <body>
         <div id="app">
-        	<nav class="navbar navbar-expand-sm bg-light sticky-top">
+        	<nav class="navbar navbar-expand-sm bg-light fixed-top">
 	        	<!-- Toggler/collapsibe Button -->
-				<button class="navbar-toggler text-black" type="button" id="navbarSideButton">
+				<!-- <button class="navbar-toggler text-black" type="button" id="navbarSideButton">
 					<i class="fas fa-th-list"></i>
-				</button>
+				</button> -->
+				<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+			        <span class="fas fa-th-list"></span>
+		        </button>
 				<a class="navbar-brand text-black" href="{{ url('/') }}">{{ config('app.name', 'Laravel') }}</a>
 				<button class="navbar-toggler text-black" type="button" data-toggle="collapse" data-target="#navbarSearch">
 					<span class="fas fa-search"></span>
 				</button>
 
-				<ul class="navbar-side" id="navbarSide">
+				<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+			        <div class="card bg-light p-3 d-block d-sm-none">
+		        		<p class="card-text">Ayo bantu majukan pendidikan di Indonesia.</p>
+				        <div class="btn-group btn-group-sm w-100" role="group">
+				    		<a href="" class="btn btn-sm btn-outline-danger w-50">Masuk</a>
+				      		<a href="" class="btn btn-sm btn-outline-primary w-50">Daftar</a>
+				    	</div>
+		        	</div>
+		        	<div class="py-3">
+				        <ul class="navbar-nav mr-auto px-1">
+				          <li class="px-2 nav-item active">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-home w-8"></span> Home</a>
+				          </li>
+				          <li class="px-2 nav-item">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-money-bill-alt w-8"></span> Investasi</a>
+				          </li>
+				          <li class="px-2 nav-item">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-puzzle-piece w-8"></span> Menjadi Negeri</a>
+				          </li>
+				          <li class="px-2 nav-item">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-bullhorn w-8"></span> Menjadi Sudut</a>
+				          </li>
+				          <li class="px-2 nav-item">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-building w-8"></span> For Corporation / CSR</a>
+				          </li>
+				          <li class="px-2 nav-item">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-handshake w-8"></span> For Nonprofit Organization / NGO</a>
+				          </li>
+				      	</ul>
+				      	<hr class="style-one">
+				        <ul class="navbar-nav mr-auto px-1">
+				          <li class="px-2 nav-item">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-file-alt w-8"></span> Syarat dan Ketentuan</a>
+				          </li>
+				          <li class="px-2 nav-item">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-unlock-alt w-8"></span> Kebijakan Privasi</a>
+				          </li>
+				          <li class="px-2 nav-item">
+				            <a class="nav-link text-black" href="#"><span class="fas fa-question-circle w-8"></span> FAQ</a>
+				          </li>
+				        </ul>
+			        </div>
+			    </div>
+
+				<!-- <ul class="navbar-side" id="navbarSide">
 				  <li class="navbar-side-item">
 				    <a href="#" class="side-link">Daftar</a>
 				  </li>
@@ -71,14 +118,16 @@
 				  </li>
 				</ul>
 
-				<div class="overlay"></div>
+				<div class="overlay"></div> -->
 
 				<div class="collapse navbar-collapse" id="navbarSearch">
 				    <ul class="navbar-nav">
 				      <li class="nav-item">
 				        <form class="form-inline" action="/action_page.php">
 						    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-						    <button class="btn btn-success" type="submit">Search</button>
+						    <span class="input-group-btn">
+							    <button class="btn btn-success" type="submit">Search</button>
+							</span>
 						</form>
 				      </li> 
 				    </ul>

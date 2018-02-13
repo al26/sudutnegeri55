@@ -12,6 +12,9 @@
 // Bootstrap Override
 @import "bootstrapOverride";
 
+// Off Canvas
+@import "offCanvas";
+
 //Owl Carousel Override
 // @import "owlCarouselOverride";
 
@@ -78,4 +81,11 @@
 	.back-side {
 		display: none;
 	}
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #000;
+  background-image: linear-gradient(to right, #ccc, #000, #ccc);
 }

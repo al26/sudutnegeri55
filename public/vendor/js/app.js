@@ -13780,7 +13780,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(12);
-module.exports = __webpack_require__(43);
+module.exports = __webpack_require__(45);
 
 
 /***/ }),
@@ -13795,9 +13795,10 @@ module.exports = __webpack_require__(43);
  */
 
 __webpack_require__(13);
-__webpack_require__(48);
+__webpack_require__(36);
+__webpack_require__(37);
 
-window.Vue = __webpack_require__(36);
+window.Vue = __webpack_require__(38);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -13805,7 +13806,7 @@ window.Vue = __webpack_require__(36);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', __webpack_require__(39));
+Vue.component('example-component', __webpack_require__(41));
 
 var app = new Vue({
   el: '#app'
@@ -35784,6 +35785,78 @@ module.exports = function spread(callback) {
 
 /***/ }),
 /* 36 */
+/***/ (function(module, exports) {
+
+$(function () {
+  'use strict';
+
+  $('[data-toggle="offcanvas"]').on('click', function () {
+    $('.offcanvas-collapse').toggleClass('open');
+  });
+});
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports) {
+
+window.flipToBack = function (btn) {
+	$(btn).parents('.front-side').hide();
+	$(btn).parents('.card-flip').find('.back-side').show();
+};
+
+window.flipToFront = function (btn) {
+	$(btn).parents('.back-side').hide();
+	$(btn).parents('.card-flip').find('.front-side').show();
+};
+
+$(document).ready(function () {
+
+	$(window).scroll(function () {
+		$('.navbar').toggleClass('bg-change', $(this).scrollTop() > 50);
+	});
+
+	// Open navbarSide when button is clicked
+	$('#navbarSideButton').on('click', function () {
+		$('#navbarSide').addClass('reveal');
+		$('.overlay').show();
+	});
+
+	// Close navbarSide when the outside of menu is clicked
+	$('.overlay').on('click', function () {
+		$('#navbarSide').removeClass('reveal');
+		$('.overlay').hide();
+	});
+
+	// Owl carousel plugin
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+		// stagePadding: 20,
+		loop: true,
+		margin: 10,
+		lazyLoad: true,
+		responsive: {
+			0: {
+				items: 1.1,
+				dots: false
+			},
+			600: {
+				items: 2,
+				dots: false
+			},
+			900: {
+				items: 3,
+				dots: false
+			},
+			1200: {
+				items: 3,
+				dots: false
+			}
+		}
+	});
+});
+
+/***/ }),
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -46597,10 +46670,10 @@ Vue$3.compile = compileToFunctions;
 
 module.exports = Vue$3;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(37).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(39).setImmediate))
 
 /***/ }),
-/* 37 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var apply = Function.prototype.apply;
@@ -46653,13 +46726,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(38);
+__webpack_require__(40);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 38 */
+/* 40 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -46852,15 +46925,15 @@ exports.clearImmediate = clearImmediate;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(6)))
 
 /***/ }),
-/* 39 */
+/* 41 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(40)
+var normalizeComponent = __webpack_require__(42)
 /* script */
-var __vue_script__ = __webpack_require__(41)
+var __vue_script__ = __webpack_require__(43)
 /* template */
-var __vue_template__ = __webpack_require__(42)
+var __vue_template__ = __webpack_require__(44)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -46899,7 +46972,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 40 */
+/* 42 */
 /***/ (function(module, exports) {
 
 /* globals __VUE_SSR_CONTEXT__ */
@@ -47008,7 +47081,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 41 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -47037,7 +47110,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 42 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -47080,74 +47153,10 @@ if (false) {
 }
 
 /***/ }),
-/* 43 */
+/* 45 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */
-/***/ (function(module, exports) {
-
-window.flipToBack = function (btn) {
-	$(btn).parents('.front-side').hide();
-	$(btn).parents('.card-flip').find('.back-side').show();
-};
-
-window.flipToFront = function (btn) {
-	$(btn).parents('.back-side').hide();
-	$(btn).parents('.card-flip').find('.front-side').show();
-};
-
-$(document).ready(function () {
-
-	$(window).scroll(function () {
-		$('.navbar').toggleClass('bg-change', $(this).scrollTop() > 50);
-	});
-
-	// Open navbarSide when button is clicked
-	$('#navbarSideButton').on('click', function () {
-		$('#navbarSide').addClass('reveal');
-		$('.overlay').show();
-	});
-
-	// Close navbarSide when the outside of menu is clicked
-	$('.overlay').on('click', function () {
-		$('#navbarSide').removeClass('reveal');
-		$('.overlay').hide();
-	});
-
-	// Owl carousel plugin
-	var owl = $('.owl-carousel');
-	owl.owlCarousel({
-		// stagePadding: 20,
-		loop: true,
-		margin: 10,
-		lazyLoad: true,
-		responsive: {
-			0: {
-				items: 1.1,
-				dots: false
-			},
-			600: {
-				items: 2,
-				dots: false
-			},
-			900: {
-				items: 3,
-				dots: false
-			},
-			1200: {
-				items: 3,
-				dots: false
-			}
-		}
-	});
-});
 
 /***/ })
 /******/ ]);
