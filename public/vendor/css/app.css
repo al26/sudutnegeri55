@@ -9096,7 +9096,7 @@ body {
   /* Prevent scroll on narrow devices */
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .offcanvas-collapse {
     position: fixed;
     top: 56px;
@@ -9262,6 +9262,60 @@ div#myCard {
   overflow: hidden;
 }
 
+@media (min-width: 992px) {
+  div#app {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section#banner {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-order: 1;
+    -moz-order: 1;
+  }
+  section#info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-order: 2;
+    -moz-order: 2;
+  }
+  section#project {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -webkit-order: 3;
+    -moz-order: 3;
+  }
+  section#campaign {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    -webkit-order: 4;
+    -moz-order: 4;
+  }
+  section#team {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    -webkit-order: 5;
+    -moz-order: 5;
+  }
+  footer {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    -webkit-order: 6;
+    -moz-order: 6;
+  }
+}
+
 .navbar-side {
   height: 100%;
   width: 25%;
@@ -9336,4 +9390,56 @@ hr.style-one {
   background: #000;
   background-image: -webkit-gradient(linear, left top, right top, from(#ccc), color-stop(#000), to(#ccc));
   background-image: linear-gradient(to right, #ccc, #000, #ccc);
+}
+
+#footer-menu {
+  background: #313131;
+}
+
+#main-footer {
+  background: #101010;
+}
+
+.social-icon {
+  width: 2rem !important;
+  height: 2rem !important;
+  padding: .5rem;
+}
+
+.fb {
+  background: #3b5999;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.g-plus {
+  background: #dd4b39;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.youtube {
+  background: #cd201f;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ig {
+  background: #cd486b;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media (min-width: 992px) {
+  div#navbarSearch {
+    border-left: 2px solid #eee;
+  }
+  div#navbarSearch input[type="text"] {
+    border: none;
+    background: transparent;
+  }
 }

@@ -89,3 +89,60 @@ hr.style-one {
   background: #000;
   background-image: linear-gradient(to right, #ccc, #000, #ccc);
 }
+
+#footer-menu {
+  background: #313131;
+}
+
+#main-footer {
+  background: #101010;
+}
+
+.social-icon {
+  width: 2rem !important;
+  height: 2rem !important;
+  padding: .5rem;
+}
+
+.fb {
+  background: #3b5999;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.g-plus {
+  background: #dd4b39;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.youtube {
+  background: #cd201f;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ig {
+  background: #cd486b;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+@include media-breakpoint-up(lg) {
+  // nav.navbar {
+  //   padding: 0.5rem 2rem !important;
+  // }
+
+  div#navbarSearch {
+    border-left: 2px solid #eee;
+    input[type="text"] {
+      border: none;
+      background: transparent;
+    }
+  }
+}

@@ -35830,28 +35830,38 @@ $(document).ready(function () {
 	// Owl carousel plugin
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
-		// stagePadding: 20,
-		loop: true,
 		margin: 10,
 		lazyLoad: true,
 		responsive: {
 			0: {
-				items: 1.1,
-				dots: false
+				items: 1,
+				dots: false,
+				loop: false,
+				stagePadding: 20
 			},
 			600: {
 				items: 2,
-				dots: false
+				dots: false,
+				loop: false,
+				stagePadding: 20
 			},
 			900: {
 				items: 3,
-				dots: false
+				dots: false,
+				loop: false,
+				stagePadding: 20
 			},
 			1200: {
 				items: 3,
-				dots: false
+				dots: false,
+				loop: false,
+				stagePadding: 20
 			}
 		}
+	});
+
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip();
 	});
 });
 
