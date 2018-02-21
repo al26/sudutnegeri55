@@ -57,3 +57,10 @@
 }
 
 .w-8 {width: 8% !important;}
+.w-40 {width: 40% !important;}
+.w-60 {width: 60% !important;}
+
+@include media-breakpoint-up(lg) {
+	.w-lg-40 {width: 40% !important;}
+	.w-lg-60 {width: 60% !important;}
+}

@@ -35793,11 +35793,17 @@ $(function () {
   $('[data-toggle="offcanvas"]').on('click', function () {
     $('.offcanvas-collapse').toggleClass('open');
   });
+
+  $('[data-toggle="search"]').on('click', function () {
+    $('.search-collapse').toggleClass('open');
+  });
 });
 
 /***/ }),
 /* 37 */
 /***/ (function(module, exports) {
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 window.flipToBack = function (btn) {
 	$(btn).parents('.front-side').hide();
@@ -35830,7 +35836,7 @@ $(document).ready(function () {
 	// Owl carousel plugin
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
-		margin: 10,
+		margin: 5,
 		lazyLoad: true,
 		responsive: {
 			0: {
@@ -35845,18 +35851,20 @@ $(document).ready(function () {
 				loop: false,
 				stagePadding: 20
 			},
-			900: {
-				items: 3,
+			900: _defineProperty({
+				items: 2,
 				dots: false,
 				loop: false,
-				stagePadding: 20
-			},
-			1200: {
-				items: 3,
+				stagePadding: 20,
+				nav: true
+			}, 'dots', true),
+			1200: _defineProperty({
+				items: 2,
 				dots: false,
 				loop: false,
-				stagePadding: 20
-			}
+				stagePadding: 20,
+				nav: true
+			}, 'dots', true)
 		}
 	});
 

@@ -3,29 +3,52 @@ body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 
-@include media-breakpoint-down(md) {
-  	.offcanvas-collapse {
-	    position: fixed;
-	    top: 56px; /* Height of navbar */
-	    left: 0;
-	    bottom: 0;
-	    width: 100%;
-	    overflow-y: auto;
-	    background-color: #f8f9fa;
-	    transition: -webkit-transform .3s ease-in-out;
-	    transition: transform .3s ease-in-out;
-	    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-	    -webkit-transform: translateX(-100%);
-	    transform: translateX(-100%);
+// @include media-breakpoint-down(md) {
+.offcanvas-collapse {
+	position: fixed;
+	top: 56px; /* Height of navbar */
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow-y: auto;
+	background-color: #f8f9fa;
+	transition: -webkit-transform .3s ease-in-out;
+	transition: transform .3s ease-in-out;
+	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	-webkit-transform: translateX(-100%);
+	transform: translateX(-100%);
 
-		&.open {
-			-webkit-transform: translateX(0);
-			transform: translateX(0); /* Account for horizontal padding on navbar */
-		}
+	&.open {
+		-webkit-transform: translateX(0);
+		transform: translateX(0); /* Account for horizontal padding on navbar */
+	}
 
-		li.nav-item.active{
-			border-left: 3px solid #000;
-		}
+	li.nav-item.active{
+		border-left: 3px solid #000;
+	}
+}
+
+.search-collapse {
+	position: fixed;
+	top: 56px; /* Height of navbar */
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow-y: auto;
+	background-color: #f8f9fa;
+	transition: -webkit-transform .3s ease-in-out;
+	transition: transform .3s ease-in-out;
+	transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+
+	&.open {
+		-webkit-transform: translateX(0);
+		transform: translateX(0); /* Account for horizontal padding on navbar */
+	}
+
+	li.nav-item.active{
+		border-left: 3px solid #000;
 	}
 }
 

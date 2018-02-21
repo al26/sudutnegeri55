@@ -29,7 +29,7 @@ $(document).ready(function() {
   	// Owl carousel plugin
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
-	    margin: 10,
+	    margin: 5,
 	    lazyLoad: true,
 	    responsive:{
 	        0:{
@@ -45,16 +45,20 @@ $(document).ready(function() {
 			    stagePadding: 20
 	        },            
 	        900:{
-	            items:3,
+	            items:2,
 	            dots: false,
 	            loop: false,
-			    stagePadding: 20
+			    stagePadding: 20,
+			    nav: true,
+			    dots: true,
 	        },
 	        1200:{
-	            items:3,
+	            items:2,
 	            dots: false,
 	            loop: false,
-			    stagePadding: 20
+			    stagePadding: 20,
+			    nav: true,
+			    dots: true,
 	        }
 	    }
 	});
