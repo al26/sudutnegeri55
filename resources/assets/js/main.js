@@ -49,16 +49,24 @@ $(document).ready(function() {
 	            dots: false,
 	            loop: false,
 			    stagePadding: 20,
-			    nav: true,
-			    dots: true,
+			    // nav: true,
+			    dots: true
 	        },
 	        1200:{
 	            items:2,
 	            dots: false,
 	            loop: false,
-			    stagePadding: 20,
-			    nav: true,
-			    dots: true,
+			    stagePadding: 30,
+			    // nav: true,
+			    dots: true
+	        },
+	        2000:{
+	            items:3,
+	            dots: false,
+	            loop: false,
+			    stagePadding: 50,
+			    // nav: true,
+			    dots: true
 	        }
 	    }
 	});

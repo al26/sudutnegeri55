@@ -22,7 +22,7 @@
     </head>
     <body>
         <div id="app">
-        	<nav class="navbar navbar-expand-lg bg-light fixed-top">
+        	<nav class="navbar navbar-expand-lg bg-light fixed-top ppx-lg-5 py-lg-2">
 	        	<!-- Toggler/collapsibe Button -->
 				<!-- <button class="navbar-toggler text-black" type="button" id="navbarSideButton">
 					<i class="fas fa-th-list"></i>
@@ -37,14 +37,15 @@
 					    	<div class="input-group">
 							    <input class="form-control rounded-0 py-2 px-3" type="text" placeholder="Cari project, campaign, atau pertanyaan" autocomplete="true">
 							    <span class="input-group-btn p-1">
-								    <button class="btn btn-info rounded-circle py-1 px-2" type="submit"><i class="fas fa-search"></i></button>
+								    <button class="btn btn-secondary rounded-circle py-1 px-2" type="submit"><i class="fas fa-search"></i></button>
 								</span>
 							</div>
 						</form>
 					</div>
 					<div id="btn-menu" class="align-self-center">
-						<a href="" class="btn btn-md btn-outline-info">Jadi Sudut</a>
-						<a href="" class="btn btn-md btn-outline-danger">Jadi Negeri</a>
+						<a href="" class="btn btn-sm btn-outline-secondary">Buat Campaign</a>
+						<a href="" class="btn btn-sm btn-outline-secondary">Jadi Volunteer</a>
+						<a href="" class="btn btn-sm btn-outline-secondary">Investasi</a>
 					</div>
 				</div>
 				<button class="navbar-toggler text-black" type="button" data-toggle="search">
@@ -112,13 +113,13 @@
 				<div id="img-banner" class="carousel slide d-flex flex-column" data-ride="carousel">
 					<div class="carousel-inner">
 					    <div class="carousel-item active">
-					      	<img src="{{ asset('vendor/images/homepage_carousel/main_slider/bg_1.jpg') }}" alt="First Image" class="d-block img-fluid">
+					      	<img src="{{ asset('vendor/images/homepage_carousel/main_slider/bg_1.jpg') }}" alt="First Image" class="img-fluid">
 					    </div>
 					    <div class="carousel-item">
-					      	<img src="{{ asset('vendor/images/homepage_carousel/main_slider/bg_2.jpg') }}" alt="Second Image" class="d-block img-fluid">
+					      	<img src="{{ asset('vendor/images/homepage_carousel/main_slider/bg_2.jpg') }}" alt="Second Image" class="img-fluid">
 					    </div>
 					    <div class="carousel-item">
-					      	<img src="{{ asset('vendor/images/homepage_carousel/main_slider/bg_3.jpg') }}" alt="Third Image" class="d-block img-fluid">
+					      	<img src="{{ asset('vendor/images/homepage_carousel/main_slider/bg_3.jpg') }}" alt="Third Image" class="img-fluid">
 					    </div>
 					</div>
 					<div id="caption-banner" class="carousel-caption text-justify text-sm-center">
@@ -138,13 +139,13 @@
 					</div>
 					<a href="" class="p-1 text-white align-self-center"><h1 class="m-0"><i class="fas fa-angle-right"></i></h1></a>
 				</div>
-				<div id="card-slider-container" class="d-flex flex-row justify-content-between">
-					<div class="d-none d-lg-flex flex-column w-lg-40">
+				<div id="card-slider-container" class="d-flex flex-row justify-content-between ppx-lg-10 py-lg-3">
+					<div class="d-none d-lg-flex flex-column w-lg-40 w-xl-30 mr-5 mt-5 text-white">
 						<h2 id="st-main">Project Populer</h2>
 						<h3 id="st-secondary"><small>Jadi volunteer atau salurkan investasi Anda</small></h3>
-						<a href="" class="btn btn-md btn-outline-danger">Lihat Lebih</a>
+						<a href="" class="btn btn-md btn-outline-danger mt-3 text-white">Lihat Semua Project</a>
 					</div>
-					<div id="card-slider" class="px-0 pb-3 owl-carousel owl-theme w-lg-60">
+					<div id="card-slider" class="px-0 pb-3 owl-carousel owl-theme w-lg-60 w-xl-70">
 					    <div class="item">
 					    	<div class="card-flip">
 								<div class="front-side w-100 animated flipInY">
@@ -542,8 +543,8 @@
 					</div>
 					<a href="" class="p-1 text-white align-self-center"><h1 class="m-0"><i class="fas fa-angle-right"></i></h1></a>
 				</div>
-				<div id="card-slider-container" class="d-flex flex-row justify-content-between">
-					<div id="card-slider" class="px-0 pb-3 owl-carousel owl-theme w-lg-60">
+				<div id="card-slider-container" class="d-flex flex-row justify-content-between ppx-lg-10 py-lg-3">
+					<div id="card-slider" class="px-0 pb-3 owl-carousel owl-theme w-lg-60 w-xl-70">
 					    <div class="item">
 					    	<div class="card-flip">
 								<div class="front-side w-100 animated flipInY">
@@ -716,17 +717,17 @@
 							</div>
 					    </div>
 					</div>
-					<div class="d-none d-lg-flex flex-column w-lg-40">
-						<h2 id="st-main">Project Populer</h2>
+					<div class="d-none d-lg-flex flex-column w-lg-40 w-xl-30 ml-5 mt-5 text-white">
+						<h2 id="st-main">Campaign Populer</h2>
 						<h3 id="st-secondary"><small>Jadi volunteer atau salurkan investasi Anda</small></h3>
-						<a href="" class="btn btn-md btn-outline-danger">Lihat Lebih</a>
+						<a href="" class="btn btn-md btn-outline-info mt-3 text-white">Lihat Semua Campaign</a>
 					</div>
 				</div>
 			</section>
 
 			<section id="info">
-				<div class="row">
-					  <div class="card col-12 col-sm-6 col col-lg-3">
+				<div class="row ppx-lg-10">
+					  <div class="cardborder-0 col-12 col-sm-6 col col-lg-3">
 					    <div class="card-body media p-3">
 						    <div class="media-body">
 						      <h5 class="mt-0 mb-1 text-black">Campaign Peduli</h5>
@@ -735,7 +736,7 @@
 					    	<img class="d-flex ml-3 rounded img-fluid" src="{{ asset('vendor/images/homepage_icons/icon_1.png') }}" alt="Image Icon" style="width: 64px;">
 					    </div>
 					  </div>
-					  <div class="card col-12 col-sm-6 col col-lg-3">
+					  <div class="card border-0 col-12 col-sm-6 col col-lg-3">
 					    <div class="card-body media p-3">
 						    <div class="media-body">
 						      <h5 class="mt-0 mb-1 text-black">Project Terlaksana</h5>
@@ -744,7 +745,7 @@
 					    	<img class="d-flex ml-3 rounded img-fluid" src="{{ asset('vendor/images/homepage_icons/icon_1.png') }}" alt="Image Icon" style="width: 64px;">
 					    </div>
 					  </div>
-					  <div class="card col-12 col-sm-6 col col-lg-3">
+					  <div class="card border-0 col-12 col-sm-6 col col-lg-3">
 					    <div class="card-body media p-3">
 						    <div class="media-body">
 						      <h5 class="mt-0 mb-1 text-black">Si Negeri Peduli</h5>
@@ -753,7 +754,7 @@
 					    	<img class="d-flex ml-3 rounded img-fluid" src="{{ asset('vendor/images/homepage_icons/icon_1.png') }}" alt="Image Icon" style="width: 64px;">
 					    </div>
 					  </div>
-					  <div class="card col-12 col-sm-6 col col-lg-3">
+					  <div class="card border-0 col-12 col-sm-6 col col-lg-3">
 					    <div class="card-body media p-3">
 						    <div class="media-body">
 						      <h5 class="mt-0 mb-1 text-black">Investasi Berdampak</h5>
@@ -766,11 +767,11 @@
 			</section>
 
 			<section id="team" class="bg-faded ">
-				<div id="section-title" class="text-left text-danger d-flex flex-column">
+				<div id="section-title" class="text-left text-lg-center text-danger d-flex flex-column">
 					<h2 id="st-main">Ikuti Jejak Kami</h2>
 					<h3 id="st-secondary"><small>Bersama majukan pendidikan Indonesia dan jadilan inspirasi</small></h3>
 				</div>
-				<div class="row container-fluid mx-auto">
+				<div class="row container-fluid mx-auto ppx-lg-10">
 					<div class="col-6 col-sm-4 col-lg-2 p-0">
 						<div class="card border-0">
 						  <img class="card-img-top" src="{{ asset('vendor/images/people/people-1.jpg') }}" alt="Card image">
@@ -829,69 +830,70 @@
 			</section>
 
 			<footer>
-				<div id="footer-menu" class="row text-white p-2">
-					<div class="col-lg-3 d-none d-lg-block">
-						<h5 class="font-weight-bold border-bottom">Bidang Pendidikan</h5>
-						<ul class="list-unstyled m-0 list-inline">
-							<li><a href="" class="p-0 btn btn-link text-white">Pengembangan Karakter Anak</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Kewirausahaan</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Kesehatan dan Lingkungan</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Keterampilan</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Edukasi Science Dasar</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Pendidikan Perempuan</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Wawasan Umum</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 d-none d-lg-block">
-						<h5 class="font-weight-bold border-bottom">Pelajari Lebih</h5>
-						<ul class="list-unstyled m-0 list-inline">
-							<li><a href="" class="p-0 btn btn-link text-white">Apa itu SudutNegeri ?</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">FAQ (Pertanyaan Populer)</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Pelajari Sudut</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Pelajari Negeri</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Syarat dan Ketentuan</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Kebijakan Privasi</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 d-none d-lg-block">
-						<h5 class="font-weight-bold border-bottom">Dukungan</h5>
-						<ul class="list-unstyled m-0 list-inline">
-							<li><a href="" class="p-0 btn btn-link text-white">Tips Project</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Transaksi</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Kontak Kami</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Kepercayaan dan Keamanan</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-3 d-none d-lg-block">
-						<h5 class="font-weight-bold border-bottom">Ikut Peduli</h5>
-						<ul class="list-unstyled m-0 list-inline">
-							<li><a href="" class="p-0 btn btn-link text-white">Investasi</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Menjadi Negeri</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">Menjadi Sudut</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">For CSR</a></li>
-							<li><a href="" class="p-0 btn btn-link text-white">For NGO</a></li>
-						</ul>
-					</div>
-					<!-- <div class="col-6">
-						<h5 class="font-weight-bold border-bottom">Ikuti Kami</h5>
-						<ul class="list-unstyled m-0 list-inline">
-							<li><a href="" class="p-0 btn btn-link btn-social text-white"><i class="mr-2 fab fa-facebook-f rounded-circle social-icon fb"></i> Facebook</a></li>
-							<li><a href="" class="p-0 btn btn-link btn-social text-white"><i class="mr-2 fab fa-google-plus-g rounded-circle social-icon g-plus"></i> Google Plus</a>
-							</li>
-							<li><a href="" class="p-0 btn btn-link btn-social text-white"><i class="mr-2 fab fa-youtube rounded-circle social-icon youtube"></i> Youtube</a></li>
-							<li><a href="" class="p-0 btn btn-link btn-social text-white"><i class="mr-2 fab fa-instagram rounded-circle social-icon ig"></i> Instagram</a></li>
-						</ul>
-					</div> -->
-					<div class="col-12 d-block d-lg-none">
-						<a href="" class="p-0 text-white"><small>Pelajari Sudut</small></a> |
-						<a href="" class="p-0 text-white"><small>Pelajari Negeri</small></a> |
-						<a href="" class="p-0 text-white"><small>Tips Project</small></a> |
-						<a href="" class="p-0 text-white"><small>Kepercayaan & Keamanan</small></a> |
-						<a href="" class="p-0 text-white"><small>Kontak Kami</small></a>
+				<div id="footer-menu" class="px-md-3 ppx-lg-10">
+					<div class="row text-white py-2 px-3">
+						<div class="col-lg-3 d-none d-lg-block">
+							<h5 class="font-weight-bold border-bottom">Bidang Pendidikan</h5>
+							<ul class="list-unstyled m-0 list-inline">
+								<li><a href="" class="p-0 btn btn-link text-white">Pengembangan Karakter Anak</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Kewirausahaan</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Kesehatan dan Lingkungan</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Keterampilan</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Edukasi Science Dasar</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Pendidikan Perempuan</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Wawasan Umum</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 d-none d-lg-block">
+							<h5 class="font-weight-bold border-bottom">Pelajari Lebih</h5>
+							<ul class="list-unstyled m-0 list-inline">
+								<li><a href="" class="p-0 btn btn-link text-white">Apa itu SudutNegeri ?</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">FAQ (Pertanyaan Populer)</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Pelajari Sudut</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Pelajari Negeri</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Syarat dan Ketentuan</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Kebijakan Privasi</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 d-none d-lg-block">
+							<h5 class="font-weight-bold border-bottom">Dukungan</h5>
+							<ul class="list-unstyled m-0 list-inline">
+								<li><a href="" class="p-0 btn btn-link text-white">Tips Project</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Transaksi</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Kontak Kami</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Kepercayaan dan Keamanan</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-3 d-none d-lg-block">
+							<h5 class="font-weight-bold border-bottom">Ikut Peduli</h5>
+							<ul class="list-unstyled m-0 list-inline">
+								<li><a href="" class="p-0 btn btn-link text-white">Investasi</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Menjadi Negeri</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">Menjadi Sudut</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">For CSR</a></li>
+								<li><a href="" class="p-0 btn btn-link text-white">For NGO</a></li>
+							</ul>
+						</div>
+						<!-- <div class="col-6">
+							<h5 class="font-weight-bold border-bottom">Ikuti Kami</h5>
+							<ul class="list-unstyled m-0 list-inline">
+								<li><a href="" class="p-0 btn btn-link btn-social text-white"><i class="mr-2 fab fa-facebook-f rounded-circle social-icon fb"></i> Facebook</a></li>
+								<li><a href="" class="p-0 btn btn-link btn-social text-white"><i class="mr-2 fab fa-google-plus-g rounded-circle social-icon g-plus"></i> Google Plus</a>
+								</li>
+								<li><a href="" class="p-0 btn btn-link btn-social text-white"><i class="mr-2 fab fa-youtube rounded-circle social-icon youtube"></i> Youtube</a></li>
+								<li><a href="" class="p-0 btn btn-link btn-social text-white"><i class="mr-2 fab fa-instagram rounded-circle social-icon ig"></i> Instagram</a></li>
+							</ul>
+						</div> -->
+						<div class="col-12 d-block d-lg-none px-3">
+							<a href="" class="p-0 text-white"><small>Pelajari Sudut</small></a> |
+							<a href="" class="p-0 text-white"><small>Pelajari Negeri</small></a> |
+							<a href="" class="p-0 text-white"><small>Tips Project</small></a> |
+							<a href="" class="p-0 text-white"><small>Kepercayaan & Keamanan</small></a> |
+							<a href="" class="p-0 text-white"><small>Kontak Kami</small></a>
+						</div>
 					</div>
 				</div>
-				
-				<div id="main-footer" class="text-left d-flex flex-row justify-content-between p-2">
+				<div id="main-footer" class="text-left d-flex flex-row justify-content-between py-2 px-3 p-md-3 py-lg-3 ppx-lg-10">
 					<!-- <a href="" class="p-1 align-self-center text-white"><h5 class="m-0">{{ config('app.name', 'Laravel') }}</h5></a> -->
 					<div class="d-flex flex-row justify-content-between align-self-center">
 						<a href="" class="p-0" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="mr-2 fab fa-facebook-f rounded-circle social-icon fb"></i></a>

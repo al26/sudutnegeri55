@@ -35855,15 +35855,19 @@ $(document).ready(function () {
 				items: 2,
 				dots: false,
 				loop: false,
-				stagePadding: 20,
-				nav: true
+				stagePadding: 20
 			}, 'dots', true),
 			1200: _defineProperty({
 				items: 2,
 				dots: false,
 				loop: false,
-				stagePadding: 20,
-				nav: true
+				stagePadding: 30
+			}, 'dots', true),
+			2000: _defineProperty({
+				items: 3,
+				dots: false,
+				loop: false,
+				stagePadding: 50
 			}, 'dots', true)
 		}
 	});

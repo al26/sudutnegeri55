@@ -16,9 +16,13 @@
 @import "offCanvas";
 
 //Owl Carousel Override
-// @import "owlCarouselOverride";
+@import "owlCarouselOverride";
 
 @import "homepage";
+
+html {
+  overflow-x: hidden;
+}
 
 .card-flip {
 	.front-side {
@@ -51,7 +55,7 @@ hr.style-one {
 }
 
 .fb {
-  background: #3b5999;
+  background: #3b5998;
   color: #fff;
   display: inline-block;
   vertical-align: middle;
@@ -65,14 +69,14 @@ hr.style-one {
 }
 
 .youtube {
-  background: #cd201f;
+  background: #bb0000;
   color: #fff;
   display: inline-block;
   vertical-align: middle;
 }
 
 .ig {
-  background: #cd486b;
+  background: #125688;
   color: #fff;
   display: inline-block;
   vertical-align: middle;
@@ -88,17 +92,13 @@ hr.style-one {
   color: #fff;
 }
 
-@include media-breakpoint-up(md) {
-  div#footer-menu, div#main-footer {
-    padding: 1rem !important;
-  }
-}
+// @include media-breakpoint-up(md) {
+//   div#footer-menu, div#main-footer {
+//     padding: 1rem !important;
+//   }
+// }
 
 @include media-breakpoint-up(lg) {
-  nav.navbar {
-    padding: 1rem !important;
-  }
-
   div#main-menu {
     border-left: 2px solid #eee;
     input[type="text"] {
@@ -117,3 +117,4 @@ hr.style-one {
       }
   }
 }
+

@@ -1,3 +1,5 @@
-.owl-stage {
-	
+div.owl-dots {
+	@include media-breakpoint-up(lg) {
+		padding: 1rem 0 0 0 !important;	
+	}
 }

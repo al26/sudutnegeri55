@@ -63,4 +63,27 @@
 @include media-breakpoint-up(lg) {
 	.w-lg-40 {width: 40% !important;}
 	.w-lg-60 {width: 60% !important;}
+	.pp-lg-5 {padding: 5% !important;}
+	.ppx-lg-5 {
+		padding-right: 5% !important;
+		padding-left: 5% !important;
+	}
+	.ppy-lg-5 {
+		padding-top: 5% !important;
+		padding-bottom: 5% !important;
+	}
+	.pp-lg-10 {padding: 10% !important;}
+	.ppy-lg-10 {
+		padding-top: 10% !important;
+		padding-bottom: 10% !important;
+	}
+	.ppx-lg-10 {
+		padding-right: 10% !important;
+		padding-left: 10% !important;
+	}
+}
+
+@include media-breakpoint-only(xl) {
+	.w-xl-30 {width: 30% !important;}
+	.w-xl-70 {width: 70% !important;}
 }
